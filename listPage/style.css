@@ -1,40 +1,4 @@
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 3rem;
-}
-.menu-bar{
-    border-radius: 2em;
-    border-color: black;
-    border-style: solid;
-}
 
-.searchbar{
-    width: 20em;
-}
-.logo{
-    padding-left: 2em;
-    width: 20%;
-}
-.searchbar{
-    width: 50%;
-}
-.icon{
-    width: 2em;
-    height: 2em;
-}
-.currency{
-    font-weight: bold;
-}
-.flex-end{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-self: end;
-}
 .info-card{
     position: relative;
     display: flex;
@@ -86,11 +50,12 @@ nav{
     margin-top: 3rem;
     min-height: 10rem;
     border-radius: 2rem;
-    background-color: green;
+    background-color: #004225;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    color: white;
 }
 .footer-links{
     display: flex;

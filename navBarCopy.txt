@@ -1,0 +1,24 @@
+<nav class="menu-bar">
+      <a href="html.html" class="logo">GURU</a>
+      <!-- search bar -->
+      <section class="searchbar">
+        <input
+          type="text"
+          placeholder="Places to go, things to do, restaurants..."
+        />
+        <button>Search</button>
+      </section>
+      <section class="menu-end">
+        <!--weather icon-->
+        <img alt="weather" src="../assests/rain.png" class="weather icon" />
+
+        <!--currency icon-->
+        <p class="currency">USD</p>
+
+        <!--location-->
+
+        <p>Sukhbaatar district</p>
+
+        <a href="profile.html">profile picture</a>
+      </section>
+    </nav>
