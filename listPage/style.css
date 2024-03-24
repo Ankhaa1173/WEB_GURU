@@ -1,0 +1,51 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-bar{
+    border-radius: 2em;
+    border-color: black;
+    border-style: solid;
+}
+
+.searchbar{
+    margin-left: 15em;
+    width: 20em;
+}
+.logo{
+    width: 20%;
+}
+.searchbar{
+    width: 50%;
+}
+.icon{
+    width: 2em;
+    height: 2em;
+}
+.currency{
+    font-weight: bold;
+}
+.flex-end{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: end;
+}
+.info-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2em;
+    border-color: black;
+    border-style: solid;
+    width: 10em;
+    height: 10em
+}
+.info-card-img{
+    border-radius: 6px;
+    width: 5em;
+    height: 5em;
+}
