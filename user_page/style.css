@@ -1,0 +1,103 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 3rem;
+}
+.menu-bar{
+    border-radius: 2em;
+    border-color: black;
+    border-style: solid;
+}
+li {
+    list-style: none;
+}
+.searchbar{
+    width: 20em;
+}
+.logo{
+    padding-left: 2em;
+    width: 20%;
+}
+.searchbar{
+    width: 50%;
+}
+.icon{
+    width: 2em;
+    height: 2em;
+}
+.currency{
+    font-weight: bold;
+}
+.menu-end{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-self: end;
+}
+
+/* Profile css */
+.frame {
+    position: relative;
+    background-color: rgb(206, 220, 233);
+    top: 1em;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-info {
+    flex-direction: column;
+    margin-right: 30em;
+}
+
+.profile-img {
+  width: 20%;
+  flex-shrink: 0; /* Prevent the image from shrinking */
+  margin-left: 2em; /* Add some space between the image and the profile info */
+  border-radius: 5%;
+}
+
+.profile-name {
+  width: 90%;
+  margin-left: 1em;
+}
+
+.profile-details {
+  list-style: none;
+  justify-content: space-between;
+}
+
+.profile-details1 {
+    justify-content: space-between;
+}
+
+.profile-details li {
+  margin-bottom: 5px; /* Add some space between each detail */
+}
+
+.side-bar {
+    position: fixed;
+    background: rgb(206, 184, 184);
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar li{
+    font-size: 20px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.side-bar li:hover{
+    background: white;
+    color: red;
+}
