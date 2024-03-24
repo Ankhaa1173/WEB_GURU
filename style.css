@@ -1,7 +1,89 @@
 .login-button {
-    padding: 10px 20px;
-    background-color: #4daf18;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #4daf18;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  margin-right: auto;
+  font-size: 36px;
+  color: #004225;
+  text-decoration: none;
+  font-weight: Regular;
+  font-style: Architects Daughter;
+}
+
+.navbar a {
+  margin-left: auto;
+  position: relative;
+  font-size: 18px;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #000;
+}
+
+.frame {
+  width: 1360px;
+  height: 240px;
+  border: 1px solid #514949; /* Add border for visualization */
+  overflow: hidden; /* Hide content that exceeds frame */
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+}
+
+.profile-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  float: left;
+  margin-right: 20px;
+}
+
+.profile-details {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin-left: 40rem;
+}
+
+.profile-details li {
+  margin-bottom: 5px;
+}
+
+/* body {
+    width: 100%;
+    height: 100vh;
+    background: url('assests/home_page_img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  */

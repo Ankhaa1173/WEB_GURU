@@ -7,49 +7,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <nav style="display: flex">
-        <ul>
-          <li>Guru</li>
-          <li>
-            <button>Search Button</button>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <i>weather</i>
-              </li>
-              <li>
-                <button>USD</button>
-              </li>
-              <li>
-                <button>Location</button>
-              </li>
-              <li>
-                <!-- <button><a href="login_page.html">Login</a></button> -->
-                <a href="login_page.html">Login</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+    <header class="header">
+      <a href="#" class="logo">Guru</a>
+      <nav class="navbar">
+        <a href="#"><button>Search</button></a>
+        <a href="#"
+          ><i
+            ><img
+              src="assests/icons8-sun-48.png"
+              width="30"
+              height="30"
+              alt="Weather icon" /></i
+        ></a>
+        <a href="#" class="">USD</a>
+        <a href="#"><button>Location</button></a>
+        <a href="#">NOTIFICATION</a>
+        <a href="#">LOG IN</a>
       </nav>
     </header>
-    <section>
-      <img
-        src="assests/snowboarding-4763731_1280.jpg"
-        width="160"
-        height="160"
-        alt="Profile"
-      />
-      <h2>Gereltuya Enkhbayar</h2>
-      <li>
-        <i>message</i
-        ><a href="mailto:example@example.com">Gereltuya Enkhbayar</a>
-      </li>
-      <li><i>phone</i>+976 99990011</li>
-      <li><i>location</i>Ulaanbaatar, Mongolia</li>
-      <li><i>calendar</i>7 Hotels Booked</li>
+    <section class="frame">
+      <section class="profile-section">
+        <img
+          src="assests/snowboarding-4763731_1280.jpg"
+          alt="Profile"
+          class="profile-img"
+        />
+        <h2 class="profile-name">Gereltuya Enkhbayar</h2>
+        <ul class="profile-details">
+          <li>
+            <i>message</i
+            ><a href="mailto:example@example.com">Gereltuya Enkhbayar</a>
+          </li>
+          <li><i>phone</i>+976 99990011</li>
+          <li><i>location</i>Ulaanbaatar, Mongolia</li>
+          <li><i>calendar</i>7 Hotels Booked</li>
+        </ul>
+      </section>
     </section>
+
     <section>
       <ul>
         <li>Saved Places</li>
