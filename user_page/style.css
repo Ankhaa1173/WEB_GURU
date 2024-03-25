@@ -95,6 +95,15 @@ li {
     padding: 10px 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    background-color: rgb(38, 186, 141);
+}
+
+.side-bar ul{
+    justify-content: center;
+    display: contents;
+    color: white;
+    background-color: black;
 }
 
 .side-bar li:hover{
