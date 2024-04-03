@@ -1,89 +1,200 @@
-.login-button {
-  padding: 10px 20px;
-  background-color: #4daf18;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Brand Color */
+:root {
+  --Brand-Color-Green: rgba(0, 66, 37, 1);
+  --Brand-color-White: rgb(255, 255, 255);
+  --Brand-color-White1: rgba(248, 248, 250, 1);
+  --Brand-black: rgba(0, 0, 0, 1);
+  --Brand-background-color: #F8F8FA;
+  --color-gray-1: rgba(197, 197, 197, 1);
+  --Green: rgba(1, 158, 89, 1);
+
+
+  
+  --text-color-default:var(--color-gray-1);
+  
+  --size-1:1rem;
+  --size-2:1.5rem;
+  --size-3:2.5rem;
+
+  --size-7:3.0rem;
+  --size-9:3.5rem;
+
+  --text-size-default:var(--size-2);
+  --border-size-default:var(--size-1); 
+  
+}
+
+
+ /* Header */
+* {
+  margin: 3px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100px;
-  background-color: white;
   display: flex;
-  align-items: center;
-  z-index: 100;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--Brand-color-White);
 }
 
 .logo {
-  margin-right: auto;
-  font-size: 36px;
-  color: #004225;
-  text-decoration: none;
-  font-weight: Regular;
-  font-style: Architects Daughter;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--size-2);
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--Brand-Color-Green);
 }
 
-.navbar a {
-  margin-left: auto;
+.menu-end {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-end p {
+  font-size: var(--size-1);
+}
+
+.weather-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.currency {
+  border-bottom: black solid 2px;
+  font-size: var(--size-2);
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  height: 3.5rem;
+  border: black solid 1px;
+  border-radius: 1rem;
+}
+
+.your-location {
+  font-size: var(--size-1);
+}
+
+.loc {
+  list-style: none;
+}
+
+.location-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.your-location-now {
+  font-size: var(--size-2);
+}
+
+.profile {
+  width: 6rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  font-size: var(--size-1);
+  color: var(--Brand-color-White);
+  background-color: var(--Brand-Color-Green);
+}
+
+/* Body  */
+body {
+  margin: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  /* text-align: ; */
+}
+
+.search-category {
   position: relative;
-  font-size: 18px;
-  color: #000;
-  font-weight: 500;
-  text-decoration: none;
-  margin-left: 1rem;
-}
-
-.navbar a::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
+  background-image: url(assests/home_page_img.png);
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  background-size: cover;
   width: 100%;
-  height: 2px;
-  background: #000;
+  max-width: 1440px;
+  height: 660px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.frame {
-  width: 1360px;
-  height: 240px;
-  border: 1px solid #514949; /* Add border for visualization */
-  overflow: hidden; /* Hide content that exceeds frame */
+.container {
+  background-color: rgba(0, 0, 0, 0.532);
+  width: 884px;
+  height: 320px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.profile-img {
-    width: 160px;
-    height: 160px;
+.container h2 {
+  font-size: var(--size-7);
+  color: var(--Brand-color-White);
+  text-align: center;
 }
 
-.profile-section {
+.category1 {
+  border-top: #ffffff5e solid 0.3em;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  list-style: none;
+  gap: 40px;
+  justify-content: space-around;
+
+}
+
+.category1 a {
+  color: var(--Brand-color-White);
+  text-decoration: none;
+  font-size: var(--size-2);
+}
+
+.input-place {
+  width: 40rem;
+  height: 3rem;
+  background-color: rgba(255, 255, 255, 0.178);
+  border-radius: 1rem;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: end;
+}
+
+.input-place p {
+  width: 5rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-size: var(--size-1);
+  color: var(--Brand-color-White);
+  background-color: var(--Brand-Color-Green);
+}
+
+.category {
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
-  float: left;
-  margin-right: 20px;
 }
 
-.profile-details {
-  list-style: none;
-  position: relative;
-  padding: 0;
-  margin-left: 40rem;
+.category-info-left {
+  position: absolute;
+  left: auto;
+  font-size: var(--text-size-default);
 }
 
-.profile-details li {
-  margin-bottom: 5px;
-}
-
-/* body {
-    width: 100%;
-    height: 100vh;
-    background: url('assests/home_page_img.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}  */
+/* .category-info-right {
+  position: absolute;
+  right: 0px;
+} */
