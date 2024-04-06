@@ -1,0 +1,76 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: seagreen;
+    color: aliceblue;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+    height: 25em;
+    width: 25em; 
+}
+.welcome{
+    color: green;
+    font-style: bold;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assests/background.png");
+    height: 100vb;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form h1{
+    font-size: 26px;
+    text-align:  center;
+    color: green;
+}
+.form .input-box{
+    margin: 25px 0;
+    width: 120%;
+    height: 10px;
+    position: relative;
+
+}
+.input-box input{
+
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 2);
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+   
+}
+
+.input-box input ::placeholder{
+    color: aliceblue;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.input-box-name{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 2);
+    font-size: 16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+}
