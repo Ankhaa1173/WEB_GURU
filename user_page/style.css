@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /* Brand Color */
 :root {
@@ -6,26 +6,24 @@
   --Brand-color-White: rgb(255, 255, 255);
   --Brand-color-White1: rgba(248, 248, 250, 1);
   --Brand-black: rgba(0, 0, 0, 1);
-  --Brand-background-color: #F8F8FA;
-  --color-gray-1: rgba(247, 238, 238, 0.772);
+  --Brand-background-color: #f8f8fa;
+  --color-gray-1: rgba(236, 235, 235, 0.562);
   --Green: rgba(1, 158, 89, 1);
-  
 
-  --text-color-default:var(--color-gray-1);
-  
-  --size-1:1rem;
-  --size-2:1.5rem;
-  --size-3:2.5rem;
+  --text-color-default: var(--color-gray-1);
 
-  --size-7:3.0rem;
-  --size-9:3.5rem;
+  --size-1: 1rem;
+  --size-2: 1.5rem;
+  --size-3: 2.5rem;
 
-  --text-size-default:var(--size-2);
-  --border-size-default:var(--size-1); 
+  --size-7: 3rem;
+  --size-9: 3.5rem;
+
+  --text-size-default: var(--size-2);
+  --border-size-default: var(--size-1);
 }
 
-
- /* Header */
+/* Header */
 * {
   margin: 3px;
   padding: 0;
@@ -34,6 +32,8 @@
 }
 
 body {
+  height: 100%;
+  width: auto;
 }
 
 .header {
@@ -43,12 +43,25 @@ body {
   background-color: var(--Brand-color-White);
 }
 
+.logo,
+.menu-end,
+.location,
+.location-icon,
+.your-location,
+.your-location-now,
+.loc,
+.weather-icon,
+.currency,
+p {
+  background-color: var(--Brand-color-White);
+}
+
 .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: var(--size-2);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: var(--Brand-Color-Green);
 }
 
@@ -107,95 +120,292 @@ body {
   background-color: var(--Brand-Color-Green);
 }
 
-
 /* Profile Frame css */
+@import "https://unpkg.com/open-props";
+
 .frame {
-    position: relative;
-    background-color: rgb(255, 255, 255);
-    top: 1em;
-    display: flex;
-    flex-direction: row;
+  position: relative;
+  background-color: var(--Brand-color-White);
+  top: 1em;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1rem;
 }
 
 .profile-section {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: var(--Brand-color-White);
 }
 
 .profile-img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 1rem;
-    margin: 10px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  margin: 10px;
 }
 
 .profile-info {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 10rem;
+  width: 100%;
+  background-color: var(--Brand-color-White);
 }
 
 .profile-name {
-    font-size: var(--size-2);
-    justify-content: start;
-    display: flex;
-    flex-direction: column;
+  font-size: var(--size-2);
+  justify-content: start;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Brand-color-White);
 }
 
 .profile-details {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--Brand-color-White);
 }
 
 .profile-details {
   list-style: none;
   justify-content: space-between;
+  background-color: var(--Brand-color-White);
 }
 
 .profile-details-li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  background-color: var(--Brand-color-White);
+}
+
+.column,
+a,
+li,
+i {
+  background-color: var(--Brand-color-White);
 }
 
 .profile-details li {
   margin-bottom: 5px;
 }
 
+.column li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon-mail,
+.icon-phone,
+.icon-calendar,
+.icon-location {
+  align-items: center;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  background-color: var(--Brand-color-White);
+}
+
+.icon-mail {
+  background-image: url("/assests/message-icon.png");
+}
+
+.icon-phone {
+  background-image: url("/assests/call-icon.png");
+}
+
+.icon-location {
+  background-image: url("/assests/location-icon.png");
+}
+
+.icon-calendar {
+  background-image: url("/assests/icon-calendar.png");
+}
+
 /* side bar */
 .side-bar {
-    margin-top: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    position: fixed;
-    display: flex;
-    gap: 1rem;
-    background-color: var(--Brand-color-White);
-    border-radius: 1rem;
-    flex-direction: column;
+  position: absolute;
+  margin-top: 2rem;
+  height: auto;
+  width: 15rem;
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: var(--Brand-color-White);
+  border-radius: 1rem;
+  flex-direction: column;
 }
 
-.side-bar li{
-    font-size: var(--size-1);
-    padding: 10px 40px;
-    display: flex;
-    align-items: center;
-    border-radius: 1rem;
-    justify-content: center;
-    background-color: rgb(38, 186, 141);
+.side-bar li {
+  font-size: var(--size-1);
+  padding: 10px 40px;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  border-radius: 1rem;
+  justify-content: center;
+  background-color: rgb(38, 186, 141);
 }
 
-.side-bar ul{
-    justify-content: center;
-    display: contents;
-    color: white;
-    background-color: black;
+.side-bar ul {
+  justify-content: center;
+  display: contents;
+  color: white;
+  background-color: black;
 }
 
-.side-bar li:hover{
-    background: white;
-    color: var(--Brand-Color-Green);
+.side-bar li:hover {
+  background: var(--Brand-color-White1);
+  color: var(--Brand-Color-Green);
+}
+
+/* side-main */
+.side-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 260px;
+}
+
+.title-search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title-search h2 {
+  align-items: start;
+}
+
+.search-button {
+  padding: 0.5rem 1rem;
+  background-color: var(--Brand-Color-Green);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 10rem;
+}
+
+.search-button:hover {
+  background-color: darkgreen;
+}
+
+.card-fav {
+  margin-bottom: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 45%;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-fav-img {
+  height: 5rem;
+  width: 5.3rem;
+  padding-left: 0.15rem;
+  border-radius: 1rem;
+}
+
+.card-fav-info {
+  display: flex;
+  flex-direction: column;
+  /* height: 6rem; */
+  width: 100%;
+  padding-right: 0.2rem;
+  padding-left: 0.2rem;
+}
+
+.card-fav-info h5 {
+  color: red;
+}
+
+.card-fav-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-fav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+.fav-icon-location {
+  background-image: url("/assests/location-icon.png");
+}
+
+.fav-icon-menu {
+  background-image: url("/assests/location-menu.png");
+}
+
+.fav-icon-category {
+  background-image: url("/assests/category-icon.png");
+}
+
+.card-fav-ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.fav-icon-location,
+.fav-icon-menu,
+.fav-icon-category {
+  display: inline-block;
+  width: 0.95rem;
+  height: 0.95rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fav-icon-location {
+  background-image: url("/assests/location-icon.png");
+}
+
+.fav-icon-menu {
+  background-image: url("/assests/menu-icon.png");
+}
+
+.fav-icon-category {
+  background-image: url("/assests/category-icon.png");
+}
+
+.card-fav-ul p {
+  font-size: 0.85rem;
+}
+
+.card-fav,
+.card-fav-info,
+.card-fav-img,
+.card-fav-title,
+.card-fav-ul,
+h3,
+.fav-icon-location,
+.fav-icon-menu,
+.fav-icon-category,
+h5 {
+  background-color: var(--Brand-color-White);
 }
