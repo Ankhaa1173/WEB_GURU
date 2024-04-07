@@ -1,94 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Page title -->
     <title>Guru</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body>
     <header>
-      <nav style="display: flex">
-        <ul>
-          <li>Guru</li>
-          <li>
-            <button>Search Button</button>
-          </li>
-          <li>
-            <ul>
-              <li>
-                <i>weather</i>
-              </li>
-              <li>
-                <button>USD</button>
-              </li>
-              <li>
-                <button>Location</button>
-              </li>
-              <li>
-                <!-- <button><a href="login_page.html">Login</a></button> -->
-                <a href="login_page.html">Login</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+        <nav class="header">
+            <a href="index.html" class="logo">GURU</a>
+            <div class="menu-end">
+                <!-- Weather icon -->
+                <img alt="weather" src="assests/rain.png" class="weather-icon"/>
+
+                <!-- Currency -->
+                <p class="currency">USD</p>
+    
+                <!-- Location -->
+                <!-- <p class="location">Sukhbaatar district</p> -->
+                <div class="location">
+                    <img src="assests/location-icon.png" alt="Your location" class="location-icon">
+                    <ul class="loc">
+                        <li class="your-location">Your location</li>
+                        <li class="your-location-now"><p>Sukhbaatar district</p></li>
+                    </ul>
+                </div>
+    
+                <!-- Profile -->
+                <button class="profile">Log-In</button>
+            </div>
+        </nav>
     </header>
-    <section >
-      <article>
-        <h2>What do you want to do?We will help you.</h2>
-        <img
-          src="assests/home_page_img.png"
-          alt="Home image"
-          width=100%
-          height=100%
-        />
-      </article>
-    </section>
-    <section>
-      <h2>Suggested places</h2>
-      <article>
-        <img src="assests/restaurant-1837150_640.jpg" alt="img1" width="285" height="221">
-        <figure><h4>Gate pub</h4><p>Ард кино тетр, Сүхбаатар дүүрэг</p></figure>
-      </article>
-      <article>
-        <img src="assests/restaurant-1837150_640.jpg" alt="img1" width="285" height="221">
-        <figure><h4>Gate pub</h4><p>Ард кино тетр, Сүхбаатар дүүрэг</p></figure>
-      </article>
-      <article>
-        <img src="assests/restaurant-1837150_640.jpg" alt="img1" width="285" height="221">
-        <figure><h4>Gate pub</h4><p>Ард кино тетр, Сүхбаатар дүүрэг</p></figure>
-      </article>
-      <article>
-        <img src="assests/restaurant-1837150_640.jpg" alt="img1" width="285" height="221">
-        <figure><h4>Gate pub</h4><p>Ард кино тетр, Сүхбаатар дүүрэг</p></figure>
-      </article>
-    </section>
-    <section>
-      <article>
-        <h2>Sports, Activity</h2>
-        <img src="assests/snowboarding-4763731_1280.jpg" alt="snowboard" width="650" height="660">
-        <h1>Your body can stand almost anything</h1>
-      </article>
-      <article>
-        <h2>Sports, Activity</h2>
-        <img src="assests/snowboarding-4763731_1280.jpg" alt="snowboard" width="650" height="660">
-        <h1>Your body can stand almost anything</h1>
-      </article>
-      <article>
-        <h2>Sports, Activity</h2>
-        <img src="assests/snowboarding-4763731_1280.jpg" alt="snowboard" width="650" height="660">
-        <h1>Your body can stand almost anything</h1>
-      </article>
-    </section>
-    <footer>
-      <h2>Connect with us and Explore</h2>
-      <h1>Guru</h1>
-      <ul>
-        <li><i>facebook</i></li>
-        <li><i>instagram</i></li>
-        <li><i>threads</i></li>
-      </ul>
+
+    <main>
+        <article class="search-category">
+            <div class="container">
+                <h2>What do you want to do?<br> We will help you.</h2>
+                <ul class="category1">
+                    <li><a href="">Search All</a></li>
+                    <li><a href="">Things</a></li>
+                    <li><a href="">Restaurants</a></li>
+                    <li><a href="">Vacations</a></li>
+                </ul>
+                <div>
+                    <button type="text" placeholder="Places to go, things to do, restaurants..." class="input-place">
+                    <p>Search</p>
+                </div>
+            </div>
+        </article>
+        
+        <!-- Places to recommend to users -->
+        <section class="suggested-places">
+            <h2>Suggested places</h2>
+            <!-- List of recommended places --> 
+            <div class="suggested-row">
+                <article class="suggested-card">
+                    <img src="assests/gate6.png" alt="gate 6 pub" class="info-card-img"/>
+                    <div class="card-info">
+                        <h4 class="info-card-name">Gate 6 pub</h4>
+                        <span class="info-card-rating">5 starts</span>
+                    </div>
+                </article>
+                <article class="suggested-card">
+                    <img src="assests/gate6.png" alt="gate 6 pub" class="info-card-img"/>
+                    <div class="card-info">
+                        <h4 class="info-card-name">Gate 6 pub</h4>
+                        <span class="info-card-rating">5 starts</span>
+                    </div>
+                </article>
+                <article class="suggested-card">
+                    <img src="assests/gate6.png" alt="gate 6 pub" class="info-card-img"/>
+                    <div class="card-info">
+                        <h4 class="info-card-name">Gate 6 pub</h4>
+                        <span class="info-card-rating">5 starts</span>
+                    </div>
+                </article>
+                <article class="suggested-card">
+                    <img src="assests/gate6.png" alt="gate 6 pub" class="info-card-img"/>
+                    <div class="card-info">
+                        <h4 class="info-card-name">Gate 6 pub</h4>
+                        <span class="info-card-rating">5 starts</span>
+                    </div>
+                </article>
+                <article class="suggested-card">
+                    <img src="assests/gate6.png" alt="gate 6 pub" class="info-card-img"/>
+                    <div class="card-info">
+                        <h4 class="info-card-name">Gate 6 pub</h4>
+                        <span class="info-card-rating">5 starts</span>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+
+        <section class="category">
+            <h3>Sports, Activity</h3>
+            <article class="category-info-left">
+                <img src="assests/snowboarding-4763731_1280.jpg" alt="winter sport" class="category-info-img"/>
+                <h2 class="category-info-text">Your body stand almost anything</h2>
+            </article>
+            <article class="category-info-left">
+                <img src="assests/snowboarding-4763731_1280.jpg" alt="winter sport" class="category-info-img"/>
+                <h2 class="category-info-text">Your body stand almost anything</h2>
+            </article>
+            <article class="category-info-left">
+                <img src="assests/snowboarding-4763731_1280.jpg" alt="winter sport" class="category-info-img"/>
+                <h2 class="category-info-text">Your body stand almost anything</h2>
+            </article>
+        </section>
+    </main>
+
+    <!-- Social media and information -->
+    <footer class="footer">
+        <!-- Social media links -->
+        <h3>Connect with Us and Explore</h3>
+        <a href="index.html" class="logo-white">GURU</a>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com" target="_blank"><img src="/assests/facebook_icon.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="/assets/twitter_icon.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="/assets/instagram_icon.png" alt="Instagram"></a></li>
+            <!-- Add more social media links as needed -->
+        </ul>
     </footer>
-  </body>
+    
+</body>
 </html>

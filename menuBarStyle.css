@@ -1,37 +1,63 @@
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 3rem;
-}
-.menu-bar{
-    border-radius: 2em;
-    border-color: black;
-    border-style: solid;
+.menu-bar {
+  border-radius: 2em;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 3rem;
+  margin-bottom: 2rem;
 }
 
-.searchbar{
-    width: 20em;
+.logo {
+  padding-left: 2em;
+  width: 20%;
 }
-.logo{
-    padding-left: 2em;
-    width: 20%;
+.searchbar {
+  width: 50%;
 }
-.searchbar{
-    width: 50%;
+.icon {
+  width: 2em;
+  height: 2em;
 }
-.icon{
-    width: 2em;
-    height: 2em;
-}
-.currency{
+.currency-dropdown {
+  position: relative;
+  display: inline-block;
+  p {
     font-weight: bold;
+  }
 }
-.menu-end{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    justify-self: end;
+.currency-dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 4em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  p {
+    text-align: center;
+  }
+}
+.currency-dropdown-main {
+  display: flex;
+  align-items: center;
+}
+
+.currency-dropdown:hover .currency-dropdown-content {
+  display: block;
+}
+.currency-dropdown-content p:hover {
+  background-color: var(--Green);
+}
+.currency-dropdown img {
+  width: 1em;
+  height: 1em;
+  aspect-ratio: 1;
+}
+.menu-end {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-self: end;
 }
