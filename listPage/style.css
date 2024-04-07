@@ -1,3 +1,26 @@
+:root {
+    --Brand-Color-Green: rgba(0, 66, 37, 1);
+    --Brand-color-White: rgb(255, 255, 255);
+    --Brand-color-White1: rgba(248, 248, 250, 1);
+    --Brand-black: rgba(0, 0, 0, 1);
+    --Brand-background-color: #F8F8FA;
+    --color-gray-1: rgba(197, 197, 197, 1);
+    --Green: rgba(1, 158, 89, 1);
+  
+  
+    
+    --text-color-default:var(--color-gray-1);
+    
+    --size-1:1rem;
+    --size-2:1.5rem;
+    --size-3:2.5rem;
+  
+    --size-7:3.0rem;
+    --size-9:3.5rem;
+  
+    --text-size-default:var(--size-2);
+    --border-size-default:var(--size-1); 
+  }
 
 .info-card{
     position: relative;
@@ -67,4 +90,57 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.search-bar{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.search-bar-wrapper{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar button{
+    position: absolute;
+    right: 0;
+    background-color: var(--Brand-Color-Green);
+    height: 80%;
+    aspect-ratio: 1;
+    border-radius: 2em;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+.search-bar input{
+    width: 100%;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15rem;
+    background-color: var(--Brand-Color-Green);
+    color: white;
+    margin-top: 2rem;
+}
+footer *{
+    margin-top: 0.5rem;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
 }

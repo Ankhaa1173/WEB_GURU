@@ -1,14 +1,13 @@
-nav{
+.menu-bar{
+    border-radius: 2em;
+    border-color: black;
+    border-style: solid;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     min-height: 3rem;
-}
-.menu-bar{
-    border-radius: 2em;
-    border-color: black;
-    border-style: solid;
+    margin-bottom: 2rem;
 }
 
 .searchbar{
