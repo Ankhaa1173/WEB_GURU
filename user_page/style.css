@@ -305,6 +305,13 @@ i {
   background-color: darkgreen;
 }
 
+.side-main-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
 .card-fav {
   margin-bottom: 0.8rem;
   display: flex;
@@ -350,7 +357,7 @@ i {
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  width: 100%;
+  width: auto;
 }
 
 .fav-icon-location {
@@ -397,6 +404,7 @@ i {
   font-size: 0.85rem;
 }
 
+/* Default styles */
 .card-fav,
 .card-fav-info,
 .card-fav-img,
@@ -408,4 +416,25 @@ h3,
 .fav-icon-category,
 h5 {
   background-color: var(--Brand-color-White);
+}
+
+/* Media Query for Mobile Phones (Vertical) */
+@media (max-width: 480px) {
+  .card-fav {
+    width: 100%; /* Full width */
+  }
+}
+
+/* Media Query for Mobile Phones (Horizontal) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .card-fav {
+    width: 48%; /* 2 cards per row */
+  }
+}
+
+/* Media Query for Computer Screens */
+@media (min-width: 768px) {
+  .card-fav {
+    width: 30%; /* 3 cards per row */
+  }
 }
