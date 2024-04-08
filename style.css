@@ -300,7 +300,12 @@ footer h3 {
   }
 
   .profile {
-    width: 5rem;
+  }
+
+  .login-link {
+    background-color: black;
+    color: var(--Brand-color-White);
+    width: 4rem;
     height: 2.5rem;
     font-size: 0.8rem;
   }
