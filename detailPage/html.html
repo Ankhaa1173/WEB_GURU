@@ -8,50 +8,94 @@
     <link rel="stylesheet" href="../menuBarStyle.css" />
   </head>
   <body>
-    <nav class="menu-bar">
-      <a href="html.html" class="logo">GURU</a>
-      <!-- search bar -->
-      <section class="searchbar">
-        <input
-          type="text"
-          placeholder="Places to go, things to do, restaurants..."
-        />
-        <button>Search</button>
+    <header>
+      <nav class="menu-bar">
+        <a href="html.html" class="logo">GURU</a>
+        <!-- search bar -->
+        <div class="search-bar">
+          <div class="search-bar-wrapper">
+            <input
+              type="text"
+              placeholder="Places to go, things to do, restaurants..."
+            />
+            <button>Search</button>
+          </div>
+        </div>
+        <div class="menu-end">
+          <!--weather icon-->
+          <img alt="weather" src="../assests/rain.png" class="weather icon" />
+
+          <!--currency icon-->
+          <div class="currency-dropdown">
+            <div class="currency-dropdown-main">
+              <p>USD</p>
+              <img src="../assests/down-chevron.png" />
+            </div>
+            <div class="currency-dropdown-content">
+              <p>MNT</p>
+              <p>CNY</p>
+              <p>EUP</p>
+              <p>JPY</p>
+            </div>
+          </div>
+
+          <!--location-->
+
+          <div class="location">
+            <img src="../assests/location-icon.png" />
+            <div>
+              <p class="text-small">Your location</p>
+              <p>Sukhbaatar district</p>
+            </div>
+            <img src="../assests/down-chevron.png" />
+          </div>
+
+          <a href="profile.html">profile picture</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <img
+        src="../assests/pexels-pixabay-262047.jpg"
+        alt=""
+        class="detail-main-img"
+      />
+      <section class="short-info">
+        <div class="short-info-name">
+          <h3>Hotel Ultra Max</h3>
+          <div>
+            <img src="../assests/star.png" alt="" />
+            <p>4.5 stars</p>
+            <p>450 reviews</p>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li>40,000</li>
+            <li>0.7km from distance</li>
+          </ul>
+          <ul>
+            <li>Central Tower, Sukhbaatar district</li>
+            <li>open from 10:00 AM - 11::00 PM</li>
+          </ul>
+        </div>
       </section>
-      <section class="menu-end">
-        <!--weather icon-->
-        <img alt="weather" src="../assests/rain.png" class="weather icon" />
-
-        <!--currency icon-->
-        <p class="currency">USD</p>
-
-        <!--location-->
-
-        <p>Sukhbaatar district</p>
-
-        <a href="profile.html">profile picture</a>
-      </section>
-    </nav>
-    <section class="detail-main">
-      <img src="" alt="" class="detail-main-img" />
       <section class="info">
-        <section class="top">
-          <h3>Hotel Del Luna</h3>
-          <section class="rev-rate">
-            <h4>4.5/450 review</h4>
-          </section>
-        </section>
-        <section class="bottom">
-          <h5>une</h5>
-          <h5>distance</h5>
-          <h5>location</h5>
-          <h5>hours</h5>
-        </section>
+        <h3>Info</h3>
+        <p>
+          Sed tempor viverra luctus. Curabitur dictum magna quis ipsum rhoncus,
+          et blandit ligula tempus. Etiam finibus placerat suscipit. Suspendisse
+          eleifend sapien risus, id tempus leo blandit in. Sed eu fermentum
+          orci. Sed sit amet enim interdum sapien pulvinar feugiat. Nam ultrices
+          tincidunt magna, vitae commodo lectus semper vitae. In hac habitasse
+          platea dictumst. Integer tristique risus in justo posuere fringilla.
+          Nam et justo ut est sagittis sollicitudin. Aenean at venenatis neque,
+          eu vestibulum nisl.
+        </p>
       </section>
-    </section>
-    <section class="menus"></section>
-    <section class="food-menus"></section>
-    <section class="rating"></section>
-    <section class="reviews"></section>
+      <section class="food-menus"></section>
+      <section class="rating"></section>
+      <section class="reviews"></section>
+    </main>
   </body>
 </html>
