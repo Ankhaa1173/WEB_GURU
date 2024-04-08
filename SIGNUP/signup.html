@@ -4,67 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGNUP</title>
-    <link rel="stylesheet" href="stylesignup.css" />
+    <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="../menuBarStyle.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <nav class="menu-bar">
-    <a href="html.html" class="logo">GURU</a>
-    <!-- search bar -->
-    <section class="searchbar">
-      <input
-        type="text"
-        placeholder="Places to go, things to do, restaurants..."
-      />
-      <button>Search</button>
-    </section>
-    <section class="menu-end">
-      <!--weather icon-->
-      <img alt="weather" src="../assests/rain.png" class="weather icon" />
+  <header>
+    <nav class="menu-bar">
+      <a href="html.html" class="logo">GURU</a>
+      <!-- search bar -->
+      <div class="search-bar">
+        <div class="search-bar-wrapper">
+          <input
+            type="text"
+            placeholder="Places to go, things to do, restaurants..."
+          />
+          <button>Search</button>
+        </div>
+      </div>
+      <div class="menu-end">
+        <!--weather icon-->
+        <img alt="weather" src="../assests/rain.png" class="weather icon" />
 
-      <!--currency icon-->
-      <p class="currency">USD</p>
+        <!--currency icon-->
+        <div class="currency-dropdown">
+          <div class="currency-dropdown-main">
+            <p>USD</p>
+            <img src="../assests/down-chevron.png" />
+          </div>
+          <div class="currency-dropdown-content">
+            <p>MNT</p>
+            <p>CNY</p>
+            <p>EUP</p>
+            <p>JPY</p>
+          </div>
+        </div>
 
-      <!--location-->
+        <!--location-->
 
-      <p>Sukhbaatar district</p>
+        <p>Sukhbaatar district</p>
 
-      <a href="profile.html">profile picture</a>
-    </section>
-  </nav>
+        <a href="profile.html">profile picture</a>
+      </div>
+    </nav>
+  </header>
     
-    <section class="main"> 
-      <section class="form">
-          <h1>Join to access the finest offerings on Guru</h1>
-
-          <div class="input-box-name">
-            <input type="text" placeholder="First Name" required>
-            <i class='bx bx-user' ></i>
-            <box-icon name='user'></box-icon>
-            <input type="text" placeholder="Last Name" required>
-            <i class='bx bx-lock-alt'></i>
-          </div>
-
-          <div class="input-box">
-            <input type="text" placeholder="Phone Number or Email" required>
-            <i class='bx bx-user' ></i>
-            <box-icon name='user'></box-icon>
-          </div>
-          <div class="input-box">
-            <input type="password" placeholder="Create your password" required>
-            <i class='bx bx-user' ></i>
-            <box-icon name='user'></box-icon>
-          </div>
-            <button type="submit" class="btn">Sign Up</button>
-          <div class="register-link">
-            <p>Not a member? <a href="#">Not a member?</a></p>
-          </div>
-          <div class="register-link">
-            <p>Log In using your Guru account <a href="#">LOGIN</a></p>
-          </div>
-           
+    <main>
+      <section class="main"> 
+        <section class="form">
+            <h1>Join to access the finest offerings on Guru</h1>
+  
+            <div class="input-box-name">
+              <input type="text" placeholder="First Name" required>
+              <box-icon name='user'></box-icon>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+  
+            <div class="input-box">
+              <input type="text" placeholder="Phone Number or Email" required>
+              <box-icon name='user'></box-icon>
+            </div>
+            <div class="input-box">
+              <input type="password" placeholder="Create your password" required>
+              <box-icon name='user'></box-icon>
+            </div>
+              <button type="submit" class="btn">Sign Up</button>
+            <div class="register-link">
+              <p>Not a member? <a href="#">Not a member?</a></p>
+            </div>
+            <div class="register-link">
+              <p>Log In using your Guru account <a href="#">LOGIN</a></p>
+            </div>
+             
+        </section>
       </section>
-    </section>
+    </main>
 </body>
 </html>
