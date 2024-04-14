@@ -73,6 +73,12 @@ main{
 .input-box input::placeholder{
     color: aliceblue;
 }
+.main .submit{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0px -15px;
+}
 .input-box i{
     position: absolute;
     right: 20px;
@@ -126,4 +132,14 @@ main{
 .form .btn{
     color: green;
 }
-    
+.register-link a {
+    color: #fff;
+}
+.register-link{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.register-link p{
+    margin-top: 1em;
+}
