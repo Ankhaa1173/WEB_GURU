@@ -21,6 +21,7 @@
 }
 body {
   background-color: var(--Brand-background-color);
+  margin: 0.3rem;
 }
 .info-card {
   width: 100%;
@@ -79,6 +80,7 @@ aside {
   padding-right: 1em;
   height: fit-content;
   width: 10%;
+  min-width: 10em;
 }
 
 aside ul {

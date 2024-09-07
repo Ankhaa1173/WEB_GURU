@@ -12,55 +12,15 @@
     <title>edit test</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../menuBarStyle.css" />
+    <link rel="stylesheet" href="../footerStyle.css" />
     <script type="module" src="./tour-card-main.js"></script>
+    <script src="../components/navbar.js" defer></script>
+    <script src="../components/info-card-group.js" defer></script>
+    <script src="../components/info-card.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav class="menu-bar">
-        <a href="html.html" class="logo">GURU</a>
-        <!-- search bar -->
-        <div class="search-bar">
-          <div class="search-bar-wrapper">
-            <input
-              type="text"
-              placeholder="Places to go, things to do, restaurants..."
-            />
-            <button>Search</button>
-          </div>
-        </div>
-        <div class="menu-end">
-          <!--weather icon-->
-          <img alt="weather" src="../assests/rain.png" class="weather icon" />
+    <nav-bar></nav-bar>
 
-          <!--currency icon-->
-          <div class="currency-dropdown">
-            <div class="currency-dropdown-main">
-              <p>USD</p>
-              <img src="../assests/down-chevron.png" />
-            </div>
-            <div class="currency-dropdown-content">
-              <p>MNT</p>
-              <p>CNY</p>
-              <p>EUP</p>
-              <p>JPY</p>
-            </div>
-          </div>
-
-          <!--location-->
-
-          <div class="location">
-            <img src="../assests/location-icon.png" />
-            <div>
-              <p class="text-small">Your location</p>
-              <p>Sukhbaatar district</p>
-            </div>
-            <img src="../assests/down-chevron.png" />
-          </div>
-
-          <a href="profile.html">profile picture</a>
-        </div>
-      </nav>
-    </header>
     <main>
       <aside>
         <form>
@@ -93,19 +53,19 @@
               </li>
             </ul>
           </article>
-          <article>
+          <!-- <article>
             <h4>Үнэлгээ</h4>
             <div class="rating-bar">
               <progress id="rating" value="1.5" max="5"></progress>
               <div class="stars">
-                <img src="../assests/star.png" />
-                <img src="../assests/star.png" />
-                <img src="../assests/star.png" />
-                <img src="../assests/star.png" />
-                <img src="../assests/star.png" />
+                <img src="../assets/star.png" />
+                <img src="../assets/star.png" />
+                <img src="../assets/star.png" />
+                <img src="../assets/star.png" />
+                <img src="../assets/star.png" />
               </div>
             </div>
-          </article>
+          </article> -->
           <article>
             <h4>Төрөл</h4>
             <ul>
@@ -150,7 +110,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -165,7 +125,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -180,57 +140,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
-                  alt="aylal"
-                  class="info-card-img"
-                />
-                <div class="info-card-name">
-                  <h4>Gate6 pub</h4>
-                  <p>4.0</p>
-                </div>
-                <p>Sukhbaatar district, Ard movie teathre</p>
-                <p>2 хүний 40,000</p>
-              </article>
-            </li>
-          </ul>
-        </section>
-        <section class="list-main">
-          <h2>Аялалууд</h2>
-          <ul>
-            <li>
-              <article class="info-card">
-                <img
-                  src="..//assests/gate6.png"
-                  alt="aylal"
-                  class="info-card-img"
-                />
-                <div class="info-card-name">
-                  <h4>Gate6 pub</h4>
-                  <p>4.0</p>
-                </div>
-                <p>Sukhbaatar district, Ard movie teathre</p>
-                <p>2 хүний 40,000</p>
-              </article>
-            </li>
-            <li>
-              <article class="info-card">
-                <img
-                  src="..//assests/gate6.png"
-                  alt="aylal"
-                  class="info-card-img"
-                />
-                <div class="info-card-name">
-                  <h4>Gate6 pub</h4>
-                  <p>4.0</p>
-                </div>
-                <p>Sukhbaatar district, Ard movie teathre</p>
-                <p>2 хүний 40,000</p>
-              </article>
-            </li>
-            <li>
-              <article class="info-card">
-                <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -250,7 +160,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -265,7 +175,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -280,7 +190,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -300,7 +210,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -315,7 +225,7 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />
@@ -330,7 +240,57 @@
             <li>
               <article class="info-card">
                 <img
-                  src="..//assests/gate6.png"
+                  src="..//assets/gate6.png"
+                  alt="aylal"
+                  class="info-card-img"
+                />
+                <div class="info-card-name">
+                  <h4>Gate6 pub</h4>
+                  <p>4.0</p>
+                </div>
+                <p>Sukhbaatar district, Ard movie teathre</p>
+                <p>2 хүний 40,000</p>
+              </article>
+            </li>
+          </ul>
+        </section>
+        <section class="list-main">
+          <h2>Аялалууд</h2>
+          <ul>
+            <li>
+              <article class="info-card">
+                <img
+                  src="..//assets/gate6.png"
+                  alt="aylal"
+                  class="info-card-img"
+                />
+                <div class="info-card-name">
+                  <h4>Gate6 pub</h4>
+                  <p>4.0</p>
+                </div>
+                <p>Sukhbaatar district, Ard movie teathre</p>
+                <p>2 хүний 40,000</p>
+              </article>
+            </li>
+            <li>
+              <article class="info-card">
+                <img
+                  src="..//assets/gate6.png"
+                  alt="aylal"
+                  class="info-card-img"
+                />
+                <div class="info-card-name">
+                  <h4>Gate6 pub</h4>
+                  <p>4.0</p>
+                </div>
+                <p>Sukhbaatar district, Ard movie teathre</p>
+                <p>2 хүний 40,000</p>
+              </article>
+            </li>
+            <li>
+              <article class="info-card">
+                <img
+                  src="..//assets/gate6.png"
                   alt="aylal"
                   class="info-card-img"
                 />

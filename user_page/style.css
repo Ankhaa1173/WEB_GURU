@@ -218,19 +218,19 @@ i {
 }
 
 .icon-mail {
-  background-image: url("/assests/message-icon.png");
+  background-image: url("/assets/message-icon.png");
 }
 
 .icon-phone {
-  background-image: url("/assests/call-icon.png");
+  background-image: url("/assets/call-icon.png");
 }
 
 .icon-location {
-  background-image: url("/assests/location-icon.png");
+  background-image: url("/assets/location-icon.png");
 }
 
 .icon-calendar {
-  background-image: url("/assests/icon-calendar.png");
+  background-image: url("/assets/icon-calendar.png");
 }
 
 /* side bar */
@@ -361,15 +361,15 @@ i {
 }
 
 .fav-icon-location {
-  background-image: url("/assests/location-icon.png");
+  background-image: url("/assets/location-icon.png");
 }
 
 .fav-icon-menu {
-  background-image: url("/assests/location-menu.png");
+  background-image: url("/assets/location-menu.png");
 }
 
 .fav-icon-category {
-  background-image: url("/assests/category-icon.png");
+  background-image: url("/assets/category-icon.png");
 }
 
 .card-fav-ul li {
@@ -389,15 +389,15 @@ i {
 }
 
 .fav-icon-location {
-  background-image: url("/assests/location-icon.png");
+  background-image: url("/assets/location-icon.png");
 }
 
 .fav-icon-menu {
-  background-image: url("/assests/menu-icon.png");
+  background-image: url("/assets/menu-icon.png");
 }
 
 .fav-icon-category {
-  background-image: url("/assests/category-icon.png");
+  background-image: url("/assets/category-icon.png");
 }
 
 .card-fav-ul p {

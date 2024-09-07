@@ -1,8 +1,15 @@
-import TourCard from "./tour-card.js";
-import TourCardGroup from "./tour-card-group.js";
-
 const usp = new URLSearchParams(document.location.search);
-// const filterValue = usp.get("category");
+
+function createInfoCard(item) {
+  const card = document.createElement("info-card");
+  card.name = item.name;
+  card.rating = item.rating;
+  card.address = item.address;
+  card.price = item.price;
+  card.type = item.type;
+  card.image = item.image || "";
+  return card;
+}
 
 fetch("http://localhost:5000?" + usp)
   .then((result) => result.json())
@@ -10,24 +17,40 @@ fetch("http://localhost:5000?" + usp)
     const foods = resultObj;
     const hashmap = new Map();
 
-    foods.map((itemObj) => {
-      const tourCard = new TourCard(itemObj);
-      let tourCardGroup;
-      if (!hashmap.has(tourCard.type)) {
-        tourCardGroup = new TourCardGroup(tourCard.type);
-        hashmap.set(tourCard.type, tourCardGroup);
+    foods.forEach((itemObj) => {
+      let infoCardGroup;
+      if (!hashmap.has(itemObj.type)) {
+        infoCardGroup = document.createElement("info-card-group");
+        infoCardGroup.type = itemObj.type;
+        hashmap.set(itemObj.type, infoCardGroup);
       } else {
-        tourCardGroup = hashmap.get(tourCard.type);
+        infoCardGroup = hashmap.get(itemObj.type);
       }
-      tourCardGroup.tourCardList.push(tourCard);
+      const infoCard = createInfoCard(itemObj);
+      infoCardGroup.appendChild(infoCard);
     });
-    let tourGroupList = hashmap.values();
-    const tourGroupListHTML = tourGroupList.map((group) => {
-      return group.Render();
+    let tourGroupList = Array.from(hashmap.values());
+    const listBody = document.getElementById("listBody");
+    listBody.innerHTML = "";
+    tourGroupList.forEach((group) => {
+      listBody.appendChild(group);
     });
-    const foodsHTML = tourGroupListHTML.reduce(
-      (prev, current) => prev + current
-    );
 
-    document.getElementById("listBody").innerHTML = foodsHTML;
+    // Add event listener after content is loaded
+    addEventListeners();
   });
+
+function addEventListeners() {
+  var elements = document.querySelectorAll("article.info-card");
+
+  elements.forEach(function (element) {
+    element.addEventListener("click", navigateToDetail);
+  });
+}
+
+function navigateToDetail() {
+  console.log("clicked");
+  window.location = "../detailPage/html.html";
+}
+
+console.log("done");

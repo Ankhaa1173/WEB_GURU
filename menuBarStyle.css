@@ -13,6 +13,9 @@
 .logo {
   padding-left: 3em;
   width: 10%;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 .search-bar {
   width: 50%;
@@ -27,7 +30,7 @@
   justify-content: center;
   align-items: center;
 }
-.search-bar button {
+.search-bar .button {
   position: absolute;
   right: 0;
   background-color: var(--Brand-Color-Green);
@@ -40,6 +43,15 @@
   text-decoration: none;
   display: inline-block;
   margin-right: 0.5em;
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 0.75em;
+    padding: 0.25em;
+  }
+}
+.search-bar .button:hover {
+  cursor: pointer;
 }
 .search-bar input {
   width: 100%;
@@ -109,4 +121,12 @@
     width: 1.5em;
     height: 1.5em;
   }
+}
+.profile-pic {
+  width: 2em;
+  height: 2em;
+}
+.profile-pic img {
+  width: 2em;
+  height: 2em;
 }

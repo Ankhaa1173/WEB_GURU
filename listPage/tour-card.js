@@ -12,13 +12,13 @@ export default class TourCard {
     return `
   <article class="info-card">
     <img
-      src="..//assests/gate6.png"
+      src="..//assets/gate6.png"
       alt="aylal"
       class="info-card-img"
     />
     <div class="info-card-name">
       <h4>${this.name}</h4>
-      <p>#${this.rating}</p>
+      <p>${this.rating}</p>
     </div>
     <p>${this.address}</p>
     <p>2 хүний ${this.price}</p>

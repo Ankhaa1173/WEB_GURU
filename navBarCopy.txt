@@ -10,7 +10,7 @@
       </section>
       <section class="menu-end">
         <!--weather icon-->
-        <img alt="weather" src="../assests/rain.png" class="weather icon" />
+        <img alt="weather" src="../assets/rain.png" class="weather icon" />
 
         <!--currency icon-->
         <p class="currency">USD</p>
