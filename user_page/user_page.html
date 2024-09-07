@@ -6,88 +6,84 @@
     <title>Guru</title>
     <link rel="stylesheet" href="/user_page/style.css" />
   </head>
-
   <body>
     <header>
-      <nav class="header">
-        <a href="/index.html" class="logo">GURU</a>
-        <div class="menu-end">
-          <!-- Weather icon -->
-          <img alt="weather" src="/assests/rain.png" class="weather-icon" />
-
-          <!-- Currency -->
+      <nav class="menu-bar">
+        <a href="html.html" class="logo">GURU</a>
+        <!-- search bar -->
+        <section class="searchbar">
+          <input
+            type="text"
+            placeholder="Places to go, things to do, restaurants..."
+          />
+          <button>Search</button>
+        </section>
+        <section class="menu-end">
+          <!--weather icon-->
+          <img alt="weather" src="../assests/rain.png" class="weather icon" />
+    
+          <!--currency icon-->
           <p class="currency">USD</p>
-
-          <!-- Location -->
-          <!-- <p class="location">Sukhbaatar district</p> -->
-          <div class="location">
-            <img
-              src="/assests/location-icon.png"
-              alt="Your location"
-              class="location-icon"
-            />
-            <ul class="loc">
-              <li class="your-location">Your location</li>
-              <li class="your-location-now"><p>Sukhbaatar district</p></li>
-            </ul>
-          </div>
-
-          <!-- Profile -->
-          <button class="profile">Log-In</button>
-        </div>
+    
+          <!--location-->
+    
+          <p>Sukhbaatar district</p>
+    
+          <a href="profile.html">profile picture</a>
+        </section>
       </nav>
     </header>
-
     <section class="frame">
       <section class="profile-section">
         <img
           src="../assests/snowboarding-4763731_1280.jpg"
           alt="Profile"
-          class="profile-img"
-        />
+          class="profile-img"/>
         <nav class="profile-info">
           <h2 class="profile-name">Gereltuya Enkhbayar</h2>
-          <ul class="profile-details-ul">
-            <!-- aldaa baigaa zasna -->
-            <li>
-              <div class="column">
-                <span class="icon-mail"></span>
-                <p>Gereltuya Enkhbayar</p>
-              </div>
-              <div class="column">
-                <span class="icon-phone"></span>
-                <p>+976 99990011</p>
-              </div>
-            </li>
-            <li>
-              <div class="column">
-                <span class="icon-location"></span>
-                <p>Ulaanbaatar, Mongolia</p>
-              </div>
-              <div class="column">
-                <span class="icon-calendar"></span>
-                <p>7 Hotels Booked</p>
-              </div>
-            </li>
-          </ul>
+          <div class="profile-details-ul">
+              <!-- aldaa baigaa zasna -->
+              <ul>
+                <li class>
+                <div class="column">
+                  <span class="icon-mail"></span>
+                  <p>Gereltuya Enkhbayar</p>
+                </div>
+                <div class="column">
+                  <span class="icon-phone"></span>
+                  <p>+976 99990011</p>
+                </div>
+              </li>
+              </ul>
+              <ul>
+                <li class>
+                <div class="column">
+                  <span class="icon-location"></span>
+                  <p>Ulaanbaatar, Mongolia</p>
+                </div>
+                <div class="column">
+                  <span class="icon-calendar"></span>
+                  <p>7 Hotels Booked</p>
+                </div>
+              </li>
+              </ul>
+            </div>
         </nav>
       </section>
     </section>
-    <section></section>
+      <section class="side-bar">
+        <ul>
+          <li>Saved Places</li>
+          <li>Settings</li>
+          <li>Reviews & Ratings</li>
+        </ul>
+     </section>
 
-    <section class="side-bar">
-      <ul>
-        <li>Saved Places</li>
-        <li>Settings</li>
-        <li>Reviews & Ratings</li>
-      </ul>
-    </section>
-
-    <section class="side-main">
-      <div class="title-search">
-        <h2>Saved Places</h2>
-        <button class="search-button">Search</button>
-      </div>
+     <section class="side-main">
+        <div class="title-search">
+          <h2>Saved Places</h2>
+          <button class="search-button">Search</button>
+        </div>
       <div class="side-main-card-container">
         <article class="card-fav">
           <img
@@ -120,8 +116,7 @@
           <img
             src="/assests/restaurant-1837150_640.jpg"
             alt="restaurant"
-            class="card-fav-img"
-          />
+            class="card-fav-img"/>
           <div class="card-fav-info">
             <div class="card-fav-title">
               <h3>Gate pub</h3>

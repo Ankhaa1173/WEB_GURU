@@ -39,7 +39,7 @@ main{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("../assests/background.png") no-repeat;
+    background: url("../assests/home_page_img.png") no-repeat;
     background-size: cover;
     background-position: center;
     position: absolute;
